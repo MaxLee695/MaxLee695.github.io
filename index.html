@@ -1,27 +1,112 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>leemax.site</title>
-        <style>
-        h1 {text-align: center;}
-        </style>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    </head>
-    <body style="background-color:#FFD8AB">
-        <h1 style="font-size:60px;">Max Lee's Website</h1>
-        <p>Welcome to my website! Im an engineer who likes robots, climbing, baking, and lots of other stuff</p>
+<style>
+* {
+  box-sizing: border-box;
+}
 
-        <h2>Some stuff I wrote</h2>
-        <h2>Robot Arm Projects</h2>
-        <a href="/Vegan_Recipes/"><h2>Vegan Recipes</h2></a>
-        <h2>Shoebox</h2>
+body {
+  margin: 0;
+  height: 100%;
+}
 
-        <p>Some other cool sites:<br>
+/* Whole page */
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main content area */
+.content {
+  flex: 1;
+  display: flex;
+}
+
+a {color: white;text-decoration: none;}
+
+
+
+/* Left side */
+.main {
+  flex: 1;
+  background-color: #E0FFFF;
+  font-size: 30px;
+  padding: 10px 40px;
+  font-family: verdana;
+  
+  display: flex;
+  justify-content: center; /* vertical centering */
+  align-items: center;     /* horizontal centering */
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Right side */
+.right {
+  background-color: #2F4F4F;
+  text-align: right;
+  color: white;
+  font-size: 30px;
+  padding: 10px 40px;
+  font-family:verdana;
+  width: 420px;
+}
+
+/* Footer */
+.footer {
+  background-color: #292929;
+  color: white;
+  padding: 5px 20px;
+  font-family:verdana;
+}
+a {color: #C2C2C2;text-decoration: none;}
+a:hover {color: #00A9FF;}
+
+/* Mobile layout */
+@media screen and (max-width: 900px) {
+  .content {
+    flex-direction: column;
+  }
+
+  /* main and right are screen width */
+  .main,
+  .right {
+    width: 100%;
+  }
+  
+   /* Expand main vertically */
+  .main {
+    flex: 1;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="content">
+  <div class="main">
+    <h1 style="font-size:60px;">Max Lee's Website</h1>
+    <p>Welcome to my website! Im an engineer who likes robots, climbing, baking, and lots of other stuff</p>
+  </div>
+
+  <div class="right">
+    <h3>Robot Arm Projects</h3>
+    <a href="/Vegan_Recipes/"><h3>Recipes</h3></a>
+    <h3>Some stuff I wrote</h3>
+    <h3>Shoebox</h3>
+  </div>
+</div>
+
+<div class="footer">
+  <p>Some other cool sites:<br>
         visit <a href="https://alv.cx">alv.cx</a><br>
         visit <a href="https://saltychips22.github.io">zebsite</a></p>
-         
-    </body>
+</div>
 
+</body>
 </html>
