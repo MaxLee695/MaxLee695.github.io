@@ -4,6 +4,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" type="image/x-icon" href="/Images/favicon-robot-48.png">
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
 <style>
 * {
   box-sizing: border-box;
@@ -19,6 +23,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  font-family: "Rubik";
 }
 
 /* Main content area */
@@ -30,37 +35,35 @@ body {
 /* Left side */
 .main {
   flex: 1;
-  background-color: #E0FFFF;
+  background-color: #F0ECC9;
   font-size: 30px;
   padding: 10px 40px;
-  font-family: verdana;
-  
+  color: #181818;
   display: flex;
   justify-content: center; /* vertical centering */
   align-items: center;     /* horizontal centering */
   flex-direction: column;
-  gap: 10px;
+  gap: 50px;
 }
 
 /* Right side */
 .right {
-  background-color: #2F4F4F;
+  background-color: #0F181D;
   text-align: right;
-  color: white;
+  color: #181818;
   font-size: 30px;
   padding: 10px 40px;
-  font-family:verdana;
   width: 500px;
 }
 
 /* Footer */
 .footer {
-  background-color: #292929;
-  color: white;
+  background-color: #482E1D;
+  color: #F0ECC9;
   padding: 5px 20px;
-  font-family:verdana;
 }
-a {color: #C2C2C2;text-decoration: none;}
+
+a {color: #F0ECC9;text-decoration: none;}
 a:hover {color: #00A9FF;}
 
 /* Mobile layout */
@@ -88,14 +91,14 @@ a:hover {color: #00A9FF;}
 <div class="content">
   <div class="main">
     <h1 style="font-size:60px;">Max Lee's Website</h1>
-    <p>Welcome to my website! Im an engineer who likes robots, climbing, baking, and lots of other stuff</p>
+    <p>Welcome to my website! I'm an engineer who likes robots, climbing, baking, and lots of other stuff...</p>
   </div>
 
   <div class="right">
-    <a href="/Robot_Arm_Projects/"><h3>Robot Arm Projects</h3></a>
-    <a href="/Recipes/"><h3>Recipes</h3></a>
-    <a href="/Some_Stuff_I_Wrote/"><h3>Some stuff I wrote</h3></a>
-    <a href="/Shoebox/"><h3>Shoebox</h3></a>
+    <a href="/Robot_Arm_Projects/" style="color:#181818;"><h3 style="background-color:#FBD0A6;">Robot Arm Projects&nbsp;</h3></a>
+    <a href="/Recipes/"><h3 style="background-color:#F37022;">Recipes&nbsp;</h3></a>
+    <a href="/Some_Stuff_I_Wrote/"><h3 style="background-color:#B11016;">Some stuff I wrote&nbsp;</h3></a>
+    <a href="/Shoebox/"><h3 style="background-color:#2ABB9E;">Shoebox&nbsp;</h3></a>
   </div>
 </div>
 
