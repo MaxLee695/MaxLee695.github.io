@@ -44,7 +44,7 @@
             .imageBox {
                 display: flex;
                 flex-direction: row;
-                justify-content: center;
+                justify-content: space-evenly;
 
             }
 
@@ -56,9 +56,14 @@
               width: 30%;
             }
             @media screen and (max-width: 800px) {
-            img {
-              width: 60%;
-            }
+                .imageBox {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                }
+                img {
+                    width: 60%;
+                }
             }
 
         </style>
